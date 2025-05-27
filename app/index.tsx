@@ -37,7 +37,8 @@ export default function Details() {
         style={{
           fontSize: 20,
           fontWeight: "bold",
-          color: "#5354af"
+          color: "#5354af",
+          paddingBottom: 5
         }}
         accessibilityRole="header"
         accessibilityLabel="Post titles page header">
@@ -46,9 +47,18 @@ export default function Details() {
       <FlatList
         data={list}
         keyExtractor={(item) => item.id.toString()}
-        renderItem={({ item }) => <Text accessibilityRole="text" accessibilityLabel={`Post title - ${item.title}`}>{item.title}</Text>}
+        renderItem={({ item }) => <Text style={styles.listItem} accessibilityRole="text" accessibilityLabel={`Post title - ${item.title}`}>{item.title}</Text>}
+        ItemSeparatorComponent={() => <View style={{ height: 2, backgroundColor: "#fff" }} />}
+        showsVerticalScrollIndicator={true}
       />
 
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  listItem: {
+    paddingLeft: 10,
+    paddingTop: 5
+  }
+})
