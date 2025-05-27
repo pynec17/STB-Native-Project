@@ -7,14 +7,14 @@ STB-Native-Project is a React Native application designed to fetch posts from th
 1. Clone the repo on your local machine
 2. Navigate to the project directory
 3. Install dependencies using npm install
-4. Run the commend npx expo start - setup may vary slightly depending on the device used, please refer to [expo website] for further details
+4. Run the commend `npx expo start` - setup may vary slightly depending on the device used, please refer to [Expo Documentation](https://docs.expo.dev/) for further details
 
 ## Features
 - Fetches and displays a list of posts.
 - Expands/collapses post details on tap.
 
 ## Accessibility 
-In an effort to improve accessiblity, I have used some of React Native's Accessibility properties, including:
+In an effort to improve accessibility, I have used some of React Native's Accessibility properties, including:
 - Accessibility roles
 - Accessibility labels
 - Accessibility hints
