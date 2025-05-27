@@ -52,27 +52,3 @@ export default function Details() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  link: {
-    fontSize: 18,
-    color: "blue",
-    marginBottom: 20,
-  },
-  itemContainer: {
-    marginBottom: 10,
-    padding: 10,
-    borderWidth: 1,
-    borderColor: "#ccc",
-    borderRadius: 5,
-  },
-  title: {
-    fontSize: 16,
-    fontWeight: "bold",
-  },
-  body: {
-    marginTop: 5,
-    fontSize: 14,
-    color: "#555",
-  },
-});

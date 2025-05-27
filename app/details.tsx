@@ -63,11 +63,6 @@ export default function Details() {
 }
 
 const styles = StyleSheet.create({
-  link: {
-    fontSize: 18,
-    color: "blue",
-    marginBottom: 20,
-  },
   itemContainer: {
     marginBottom: 10,
     padding: 10,
