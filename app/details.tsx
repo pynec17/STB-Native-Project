@@ -57,6 +57,7 @@ export default function Details() {
             )}
           </View>
         )}
+        showsVerticalScrollIndicator={true}
       />
     </View>
   );
