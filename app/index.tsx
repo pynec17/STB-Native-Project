@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FlatList, Text, View, Pressable, StyleSheet } from "react-native";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 
@@ -9,7 +9,7 @@ interface Post {
 }
 
 export default function Details() {
-  const [list, setList] = useState<Post[]>([]);;
+  const [list, setList] = useState<Post[]>([]);
 
   const getData = async () => {
     let response = await fetch('https://jsonplaceholder.typicode.com/posts');
@@ -45,6 +45,7 @@ export default function Details() {
       </Text>
       <FlatList
         data={list}
+        keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => <Text accessibilityRole="text" accessibilityLabel={`Post title - ${item.title}`}>{item.title}</Text>}
       />
 
